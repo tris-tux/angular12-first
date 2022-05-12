@@ -1,0 +1,11 @@
+<p>login works!</p>
+<div>
+    <label for="">Username</label><br>
+    <input type="text" [(ngModel)]="username">
+</div>
+
+{{username}}
+<div>
+    <button (click)="login()">Login</button>
+</div>
+<button routerLink="/admin">Database</button>

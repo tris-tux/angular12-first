@@ -1,0 +1,19 @@
+<p>database works!</p>
+
+<form [formGroup]="userProfile" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Name</label><br>
+        <input type="text" formControlName="name" required>
+    </div>
+
+    <div>
+        <label>Address</label><br>
+        <input type="text" formControlName="address" required>
+    </div>
+
+    <button type="submit" [disabled]="userProfile.valid == false">Submit Data</button>
+</form>
+
+
+{{userProfile.value}}
+{{userProfile.value | json}}

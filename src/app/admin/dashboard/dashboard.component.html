@@ -1,0 +1,16 @@
+<p>dashboard works!</p>
+
+<!-- <div *ngFor="let n of [1,2,3,4,5, 'coba']"> -->
+<div *ngFor = "let n of data">
+    <!-- <div *ngIf = "n.approved"> -->
+    <!-- <div [ngClass]="{'approved': true}"> -->
+    <!-- <div [ngClass]="{'approved': n.approved}"> -->
+    <div [ngClass]="{'approved': n.name== 'Tris' ? true:false}">
+        display {{n.name}}
+    </div>
+
+
+    <div [ngStyle]="{color: 'red', backgroundColor: 'grey'}">
+        display {{n.address}}
+    </div>
+</div>
